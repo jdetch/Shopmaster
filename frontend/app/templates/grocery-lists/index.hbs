@@ -3,8 +3,10 @@
 {{#each grocery-list in model}}
   <h3>{{grocery-list.name}}</h3>
   <p>{{grocery-list.description}}</p>
+    {{#each item in grocery-list.items}}
+      <p>{{item.name}} quantity: {{item.quantity}}</p>  
+    {{/each}}
 {{/each}}
 
-{{link-to 'Create a new grocery list' 'grocery-lists.new'}}
-
+<button>{{link-to 'Create a new grocery list' 'grocery-lists.new'}}</button>
 
