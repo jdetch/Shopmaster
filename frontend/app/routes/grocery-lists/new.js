@@ -14,8 +14,14 @@ export default Ember.Route.extend({
       var model = this.get('controller.model');
 
       var _this = this;
-      model.save();
-      _this.transitionTo('grocery-lists.index');
+      model.save().then(function(grocery_list) {
+        grocery_list.get('items').then(function(items){
+          items.forEach(function(item){
+            item.save();
+          });
+          _this.transitionTo('grocery-lists.index');
+        });
+      });
     }
   }
 

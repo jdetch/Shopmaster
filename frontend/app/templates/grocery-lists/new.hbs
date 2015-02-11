@@ -1,6 +1,14 @@
 <h1>Create your new grocery list</h1>
 
-List name: {{input type="text" value=content.name}}
-List description: {{input type="text" value=content.description}}
+<p>List name: {{input type="text" value=content.name}}</p>
+
+<p>List description: {{input type="text" value=content.description}}</p>
+
+{{#each item in model.items}}
+  <p>Item name: {{input type="text" value=item.name}}
+  Item quantity: {{input type="text" value=item.quantity}}</p>
+{{/each}}
+
+<p><button {{action 'addItem'}}>Add item</button></p>
 
 <p><button {{action 'save'}}>Save list</button></p>
