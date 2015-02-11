@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('grocery-lists', function() {
-
+    this.route('new');
  });
 });
 

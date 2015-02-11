@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :grocery_lists
+      resources :grocery_lists, only: [:index, :create]
     end
   end
 end
