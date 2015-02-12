@@ -4,7 +4,7 @@ Shopmaster is a basic sample application that facilitates the creation of grocer
  
 ## Description
 
-Shopmaster was created to demonstrate how to save a new parent record and its children simultaneously using Rails API and Ember CLI. You can read find additional information about this topic in my original [blogpost](PLACEHOLDER).
+Shopmaster was created to demonstrate how to save a new parent record and its children simultaneously. You can  find additional information about this topic in my original [blogpost](PLACEHOLDER).
 
 Shopmaster is built on the following:
 
@@ -22,7 +22,7 @@ Shopmaster is built on the following:
 
 To begin:
 
-Clone the repository locally using 'git clone git@github.com:jdetch/Shopmaster.git'
+Clone the repository locally using `git clone git@github.com:jdetch/Shopmaster.git`
 
 ### Frontend
 
@@ -31,29 +31,39 @@ The `frontend` directory represents the Ember CLI portion of the application.
 In the terminal:
 
   cd frontend
-  npm install
-  bower install 
+    npm install
+    bower install 
 
 ### Backend
 
 In the terminal:
 
-  cd backend
-
-  bundle install
-  rake db:create
-  rake db:migrate
+    cd backend
+    bundle install
+    rake db:create
+    rake db:migrate
 
 ### Running the app
 
 From inside the `backend` directory:
 
-  rails server
+    rails server
 
 From inside the `frontend` directory (create a separate tab in the terminal):
 
-  ember server --proxy http://localhost:3000 
+    ember server --proxy http://localhost:3000 
 
-You should then be able to browse the app at [http://localhost:4200](http://localhost:4200/).  
+You should then be able to browse the app at [http://localhost:4200](http://localhost:4200/).
 
 Get shopping!
+
+#### Versions in use as of this writing
+
+ 
+Ember      : 1.8.1
+
+Ember Data : 1.0.0-beta.14.1  
+
+Ember CLI  : 0.1.13
+
+Rails      : 4.1.6
