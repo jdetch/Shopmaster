@@ -16,7 +16,7 @@ Shopmaster is built on the following:
  
 * Create new grocery lists with names and descriptions
 * Dynamically add one to n list items to a given grocery list
-* Save your grocery list and all of its items together at the same time
+* Save a grocery list and all of its items together at the same time
 
 ## Installation
 
