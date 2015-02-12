@@ -12,17 +12,20 @@ export default Ember.Route.extend({
   actions: {
     save: function() {
       var model = this.get('controller.model');
-
       var _this = this;
-      model.save().then(function(grocery_list) {
-        grocery_list.get('items').then(function(items){
-          items.forEach(function(item){
-            item.save();
-          });
-          _this.transitionTo('grocery-lists.index');
+      var promises = [];
+
+      model.save().then(function(grocery_list){
+        grocery_list.get('items').forEach(function(item) {
+          promises.push(item.save());
         });
-      });
+          return Ember.RSVP.all(promises).then(function () {
+            _this.transitionTo('grocery-lists.index');
+          }).catch(function () {
+            console.log('one of the saves failed');
+          });
+        });
+      }
     }
-  }
 
 });
