@@ -30,7 +30,7 @@ The `frontend` directory represents the Ember CLI portion of the application.
 
 In the terminal:
 
-  cd frontend
+    cd frontend
     npm install
     bower install 
 
