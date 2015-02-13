@@ -4,7 +4,7 @@ Shopmaster is a basic sample application that facilitates the creation of grocer
  
 ## Description
 
-Shopmaster was created to demonstrate how to save a new parent record and its children simultaneously. You can  find additional information about this topic in my original [blogpost](PLACEHOLDER).
+Shopmaster was created to demonstrate how to save a new parent record and its children simultaneously. You can  find additional information about this topic in my original [blogpost](http://blog.greenfieldhq.com/2015/02/13/save-parent-model-and-all-children-with-rails-and-ember-cli/).
 
 Shopmaster is built on the following:
 
