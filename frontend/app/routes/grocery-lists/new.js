@@ -15,8 +15,8 @@ export default Ember.Route.extend({
       var _this = this;
       var promises = [];
 
-      model.save().then(function(grocery_list){
-        grocery_list.get('items').forEach(function(item) {
+      model.save().then(function(groceryList){
+        groceryList.get('items').forEach(function(item) {
           promises.push(item.save());
         });
           return Ember.RSVP.all(promises).then(function () {

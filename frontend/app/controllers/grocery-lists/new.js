@@ -4,9 +4,9 @@ export default Ember.Controller.extend({
   actions: {
     addItem: function() {
       var item = this.store.createRecord('item');
-      var grocery_list = this.get('model');
+      var groceryList = this.get('model');
 
-      grocery_list.get('items').pushObject(item);
+      groceryList.get('items').pushObject(item);
     }
   }
 
