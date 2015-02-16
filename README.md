@@ -1,7 +1,7 @@
 # Shopmaster
 
-Shopmaster is a basic sample application that facilitates the creation of grocery lists. 
- 
+Shopmaster is a basic sample application that facilitates the creation of grocery lists.
+
 ## Description
 
 Shopmaster was created to demonstrate how to save a new parent record and its children simultaneously. You can  find additional information about this topic in my original [blogpost](http://blog.greenfieldhq.com/2015/02/13/save-parent-model-and-all-children-with-rails-and-ember-cli/).
@@ -13,7 +13,7 @@ Shopmaster is built on the following:
 * PostgreSQL
 
 ## Features
- 
+
 * Create new grocery lists with names and descriptions
 * Dynamically add one to n list items to a given grocery list
 * Save a grocery list and all of its items together at the same time
@@ -32,7 +32,7 @@ In the terminal:
 
     cd frontend
     npm install
-    bower install 
+    bower install
 
 ### Backend
 
@@ -51,7 +51,7 @@ From inside the `backend` directory:
 
 From inside the `frontend` directory (create a separate tab in the terminal):
 
-    ember server --proxy http://localhost:3000 
+    ember server --proxy http://localhost:3000
 
 You should then be able to browse the app at [http://localhost:4200](http://localhost:4200/).
 
@@ -59,11 +59,11 @@ Get shopping!
 
 #### Versions in use as of this writing
 
- 
-Ember      : 1.8.1
 
-Ember Data : 1.0.0-beta.14.1  
+Ember      : 1.9.1
 
-Ember CLI  : 0.1.13
+Ember Data : 1.0.0-beta.15
+
+Ember CLI  : 0.1.15
 
 Rails      : 4.1.6
